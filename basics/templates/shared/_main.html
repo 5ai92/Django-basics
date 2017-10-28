@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<!--{% load static %}-->
+	<head>
+		<title>MovieBase</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link href="/static/css/styling.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="navbar">
+            <ul>
+            <li class="menu">
+                <a href="/">Basics</a>
+            </li>
+             <li class="search-form">
+                 <form method="get" action="">
+                    <input type="text" placeholder="search">
+                    <input value="search" id="submitButton" type="submit" />
+                </form>
+            </li>
+            <li class="pull-right">
+                {% if user.is_authenticated %}
+                    <a href="/">{{ user }}</a>
+                {% else %}
+                    <a href="/user_login/">login</a>
+                {% endif %}
+            </li>
+			</ul>
+		</div>
+        {% block content %}
+        {% endblock %}
+
+        <div id="footer"></div>
+		<script type="text/javascript" src="/static/js/jquery-3.1.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="/static/js/script3.js"></script>
+	</body>
+</html>

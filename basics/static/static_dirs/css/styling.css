@@ -1,0 +1,443 @@
+/*--------------------------- LAYOUT SECTION -----------------------------*/
+html,
+body {
+    background-color: #FFFCFB;
+    margin:0px;
+    padding:0;
+    height:100%
+    font-family: Gill Sans, sans-serif;
+    font-size: 14px;
+}
+/*-----------------------------Nav bar styling ----------------------------*/
+#navbar {
+    background-color: #2C3941;
+    margin:0px 0px 0px 0px;
+    padding:5px;
+    height: 50px;
+    border-radius: 1px;
+    overflow: auto;
+}
+
+#navbar ul li{
+    list-style-type: none;
+    float: left;
+    /*display: inline-block;*/
+}
+
+#navbar ul .menu{
+    margin-left: 90px;
+    display: inline;
+    font-size: 180%;
+    font-weight: bold;
+}
+
+#navbar ul .pull-right{
+    float: right;
+    margin-right: min(35%);
+    margin-top: 5px;
+    font-size: 125%;
+    display: inline;
+}
+
+#navbar ul li a{
+
+    text-decoration: none;
+    color: #EDF4EB;
+    font-family: Trebuchet MS;
+    padding: .2em 1em;
+    letter-spacing: 0px;
+}
+
+/*
+#navbar .profile li {
+    display: inline;
+    float: right;
+    font-size: 120%;
+    font-weight: bold;
+}
+*/
+#navbar .search-form{
+    margin-top: 7px;
+    margin-left: 90px;
+}
+
+#navbar .search-form input[type=text]{
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 2px;
+}
+
+#navbar .search-form input[value=search]{
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+}
+/*-------------------------------------Footer-----------------------------*/
+
+#footer {
+    background-color: #2C3941;
+    padding:0;
+    height: 110px;
+    border-radius: 1px;
+    margin-top: 10%;
+    clear: both;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.home_page {
+    margin: 2% 10% 3% 10%;
+}
+
+.page {
+    margin: 2% 10% 3% 10%;
+}
+
+/*---------------------- Grids ------------------ */
+
+.box1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    border-radius: 7px;
+    height: 420px;
+    grid-template-areas: minmax(100px, auto);
+    background-color: #3498db;
+}
+
+.box2 {
+    grid-column: 1;
+    grid-row: 3/5;
+    background-color: #3498db;
+    border-radius: 7px;
+    padding: 2px;
+}
+
+.box3 {
+    grid-column: 2;
+    grid-row: 3/5;
+    background-color: #7FDBFF;
+    border-radius: 7px;
+    padding: 2px;
+}
+
+.box4 {
+    grid-column: 1/4;
+    grid-row: 5/7;
+    background-color: #95a5a6;
+    border-radius: 7px;
+    padding: 2px;
+}
+
+.box5 {
+    grid-column: 1/4;
+    grid-row: 7/9;
+    background-color: #f39c12;
+    border-radius: 7px;
+    padding: 2px;
+}
+
+.box6 {
+    grid-column: 3;
+    grid-row: 1/5;
+    background-color: #bdc3c7;
+    border-radius: 7px;
+    padding: 2px;
+    grid-template-areas: minmax(100px, auto);
+}
+
+.page .box7 {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    border-radius: 7px;
+    background-color: #bdc3c7;
+    height: 420px;
+}
+
+.page .box8 {
+    grid-column: 1/4;
+    grid-row: 3/6;
+    border-radius: 7px;
+    background-color: white;
+    height: 420px;
+    grid-template-areas: minmax(100px, auto);
+}
+
+.page .box9 {
+    grid-column: 1/4;
+    grid-row: 6/9;
+    border-radius: 7px;
+    background-color: #bdc3c7;
+    height: 420px;
+    grid-template-areas: minmax(100px, auto);
+}
+
+.page .box10 {
+    grid-column: 1/4;
+    grid-row: 9/12;
+    border-radius: 7px;
+    background-color: #bdc3c7;
+    height: 420px;
+    grid-template-areas: minmax(100px, auto);
+}
+
+.articles_post_box {
+    grid-column: 1/4;
+    grid-row: 1/10;
+    border-radius: 7px;
+    height: min(1000px);
+    grid-template-areas: minmax(100px, auto);
+    background-color: white;
+    border: 1px solid #2C3941;
+}
+
+
+/*---------------------- Styling for ARTICLES LIST page------------------ */
+.article_page_wrapper {
+
+}
+
+.articles_list {
+    background-color: #EBEEEF;
+    margin:10px 380px 10px 70px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 110%;
+}
+
+.side-right {
+    background-color: #EBEEEF;
+    margin:0px 70px 10px 70px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 105%;
+    float: right;
+    width: 300px;
+    clear: right;
+}
+
+/*--------------------------- HEADINGS SECTION -----------------------------*/
+h1 {
+    color: #061D42;
+    font-size: 140%;
+    margin: 10px 0px 15px 0px;
+}
+
+h2 {
+    color: #061D42;
+    font-size: 120%;
+    margin: 10px 0px 15px 0px;
+}
+
+/*----------------------------Home page images styling -----------------------*/
+.box1 .box-container{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.box1 .box-container > img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+/*
+.box1 .box-container {
+    background-image: url("/Users/bhargavsaidama/my_articles/camera.jpg") no repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    border-color: #7FDBFF;
+}
+*/
+
+.box1 .box-container > h2 {
+    position: absolute;
+    color: white;
+    font-size: 150%;
+    top: 50%;
+    letter-spacing: 1px; /* fallback color */
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    font-family: Trebuchet MS;
+}
+
+/*------------------------------Sixth box styling ------------------------*/
+.box6 .container {
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;s
+}
+
+.box6 .container > h2 {
+    position: absolute;
+    color: white;
+    font-size: 130%;
+    letter-spacing: 1px; /* fallback color */
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    font-family: Trebuchet MS;
+}
+/*-------------------------------Second & Third grid box styling --------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------Movie_page styling ---------------------------*/
+.box7 .subitems {
+    height: 80%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-auto-rows: minmax(75px, auto);
+    grid-gap: 10px;
+}
+
+.box7 .subitems .movie_profile {
+    margin-left: 25%;
+    grid-column: 1/2;
+    grid-row: 2/5;
+    min-height: 100%;
+    background-color: white;
+    border-radius: 7px;
+}
+
+.box7 .subitems .movie_header {
+    grid-column: 2/5;
+    grid-row: 2/5;
+    min-height: 100%;
+    background-color: white;
+    border-radius: 7px;
+}
+
+
+/*
+.page .box7 #container {
+    background-image: url("/Users/bhargavsaidama/my_articles/camera.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+}  */
+/*-------------------------------Movie page background blur --------------------*/
+
+
+
+
+
+
+/*-------------------------------Login-page-wrapper -----------------------------*/
+.login-page-grid {
+    grid-column: 2/3;
+    grid-row: 2/7;
+    min-height: 100%;
+    background-color: white;
+    border-radius: 7px;
+    border: 3px solid #2C3941;
+   /* background-color: #70CC9E; */
+}
+
+.login-page-grid #container-fluid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-gap: 10px;
+    grid-template-rows: 0.5fr 2fr 2fr 2fr 0.5fr;
+}
+
+.login-page-grid #container-fluid .login-form {
+    /*border: 3px solid #70CC9E; */
+    grid-column: 2/5;
+    grid-row: 2/5;
+    grid-gap: 10px;
+    text-align: center;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.login-page-grid #container-fluid .login-form form {
+    margin-top: 10%;
+}
+
+.login-page-grid #container-fluid .login-form form input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-page-grid #container-fluid .login-form form input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-page-grid #container-fluid .login-form form input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.login-page-grid #container-fluid .login-form form input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/*---------------------------------login/register page end ----------------------*/
+
+
+/*---------------------------------post articles page ---------------------------*/
+.articles_post_box .articles_post_container {
+    width: 100%;
+    height: 100%;
+    margin: 15px;
+    /*text-align: center;*/
+}
+
+
+.articles_post_box .articles_post_container input[type=text] {
+    border-radius: 3px;
+}
+
+.articles_post_box .articles_post_container textarea {
+   border-radius: 3px;
+}
+
+.articles_post_box .articles_post_container input[type=submit] {
+   border-radius: 3px;
+}
