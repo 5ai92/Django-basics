@@ -2,7 +2,7 @@
 <html>
 <!--{% load static %}-->
 	<head>
-		<title>MovieBase</title>
+		<title>Basics</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
@@ -32,9 +32,12 @@
             </li>
 			</ul>
 		</div>
-        {% block content %}
-        {% endblock %}
-
+        <div class="home_page">
+            <div class="wrapper">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
         <div id="footer"></div>
 		<script type="text/javascript" src="/static/js/jquery-3.1.1.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
