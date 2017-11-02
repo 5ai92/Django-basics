@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Page, Author, Publisher
+from .models import Page
 from django import forms
 
 from ckeditor.widgets import CKEditorWidget
@@ -20,6 +20,4 @@ class PageAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Page, PageAdmin)
-admin.site.register(Author)
-admin.site.register(Publisher)
 

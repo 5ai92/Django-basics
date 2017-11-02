@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from pages.views import staff_admin
+from pages.views import PageView, AddPageView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^ckeditor/', include('ckeditor_uploader.urls')),
-    url(r'^$', staff_admin, name="staff_admin")
+    url(r'^$', PageView.as_view(), name="staff_admin"),
+    url(r'^staff/add_page/$', AddPageView.as_view(), name="add_page")
 ]

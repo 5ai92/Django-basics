@@ -1,0 +1,30 @@
+{% extends "shared/_main.html" %}
+{% block content %}
+
+{% load static %}
+<script type="text/javascript" src="{% static "ckeditor/ckeditor-init.js" %}"></script>
+<script type="text/javascript" src="{% static "ckeditor/ckeditor/ckeditor.js" %}"></script>
+
+<!-------Grid Wrapper ----------->
+        <div class="box10">
+            <div class="box-container">
+                {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                    <li class="{{ message.tags }}">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                <form method="post" action="{% url 'add_page' %}">
+                    {% csrf_token %}
+                    <div>
+                        Title : {{ form.title }}<br>
+                        <br><p>Content :</p>
+                        {{ form.content }}<br>
+                        <br>
+                        <input type="submit" value="post">
+                    </div>
+                </form>
+            </div>
+        </div>
+{% endblock %}
