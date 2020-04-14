@@ -39,6 +39,6 @@ social-auth-core==1.4.0
 tzlocal==1.4
 Unidecode==0.4.21
 urllib3==1.21.1
-wagtail==1.13
+wagtail==2.7.2
 webencodings==0.5.1
 Willow==1.0
