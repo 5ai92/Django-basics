@@ -17,7 +17,7 @@ future==0.16.0
 grappelli-safe==0.4.7
 html5lib==0.999999999
 idna==2.5
-lxml==3.8.0
+lxml==4.6.5
 Mezzanine==4.2.3
 mock==2.0.0
 numpy==1.13.1
